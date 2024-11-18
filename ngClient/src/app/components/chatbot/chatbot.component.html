@@ -1,0 +1,80 @@
+<!-- Chatbot -->
+<section id="chatbot" class="my-5">
+    <div class="container">
+        <div class="text-center">
+            <h5 class="d-inline-block justify-content-lg-center section-title">
+               MINDASSIST
+            </h5>
+            <h2 style="color: #22BBFF;margin:20px auto;">
+                Virtual care makes your life <span style="color: #41DCBD;">Easier.</span>
+            </h2>
+            <p >
+                MINDASSIST is an AI chatbot that can respond to all your questions about your feelings.
+            </p>
+        </div>
+        <div class="col">
+            <div class="bootstrap_chat my-5 px-5">
+                <div class="container py-5 px-4">
+                    <!-- For demo purpose-->
+                    <header class="text-center">
+                        <!-- <h1 class="display-4 text-BLACK">How are you doing ToDay?</h1>   -->
+                        <h2 class="mb-5">How are you feeling today ?</h2>
+
+                        <!-- Chat Box-->
+                        <div class="col-12 px-0">
+                            <div class="px-4 py-5 chat-box bg-white">
+                                <div *ngFor="let m of messages; let i = index; let r of responses;">
+                                    <!-- TESTING-->
+                                    <div class="row media w-50 mb-3">
+                                        <div class="col-1">
+                                            <i class="bi bi-person-circle fs-2"></i>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="media-body ms-3">
+                                                <div class="bg-light rounded-3 py-2 px-3 mb-2 shadow-md" style="background-color: #22BBFF !important">
+                                                    <p class="text-small mb-0 text-white">{{messages[i]}}</p>
+                                                </div>
+                                                <p class="small text-muted"> {{ this.messageDate | date:'d MMM y | h:mm a'}} </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TESTING-->
+
+                                    <!-- TESTING-->
+                                    
+                                    <div class="row media w-50 ms-auto mb-3">
+                                        <div class="col-11">
+                                            <div class="media-body ms-3">
+                                                <div class="bg-light rounded-3 py-2 px-3 mb-2 shadow-md" style="background-color: #41DCBD !important">
+                                                    <p class="text-small mb-0 text-white">{{r['response']}}</p>
+                                                </div>
+                                                <p class="small text-muted"> {{ this.messageDate | date:'d MMM y | h:mm a'}} </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <i class="bi bi-robot fs-2"></i>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+
+                            </div>
+
+                            <!-- Typing area -->
+                            <form (ngSubmit)="onSubmit()" class="mt-5" name="chatbotForm">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Type a message..." [(ngModel)]="chat.message" name="message" autocomplete="off" class="form-control border-0 rounded-md py-4 bg-light"/>
+                                    <button type="submit" class="btn btn-info">
+                                        <i class="bi bi-send-fill fs-4 px-3 text-white"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>

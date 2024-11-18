@@ -1,0 +1,26 @@
+<div class="relaxation-activities">
+  <h2>Relaxation Activities</h2>
+  
+  <!-- Cartes d'activités de relaxation -->
+  <div class="activity-cards">
+    <div *ngFor="let activity of activities" class="activity-card">
+      <img [src]="activity.imageUrl" alt="{{ activity.title }}" />
+      <h3>{{ activity.title }}</h3>
+      <p>{{ activity.description }}</p>
+      <a [href]="activity.link" target="_blank">Learn More</a>
+    </div>
+  </div>
+  
+  <!-- Checklist des activités quotidiennes -->
+  <div class="daily-checklist">
+    <h3>Daily Activities Checklist</h3>
+    <ul>
+      <li *ngFor="let item of dailyActivities">
+        <label>
+          <input type="checkbox" [(ngModel)]="item.completed" />
+          {{ item.name }}
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>

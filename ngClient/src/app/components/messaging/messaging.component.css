@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+    background-image: url('../../../assets/img/background.png'); /* Vérifiez que le chemin de l'image est correct */
+    background-size: cover; /* Pour que l'image couvre toute la fenêtre */
+    background-repeat: no-repeat; /* Pour éviter que l'image ne se répète */
+    background-position: center; /* Pour centrer l'image */
+    min-height: 100vh; /* Pour que le fond couvre toute la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+    font-family: Arial, sans-serif; /* Police de base */
+}
+
+.messaging-container {
+    background-color: rgba(249, 249, 249, 0.9); /* Couleur de fond semi-transparente */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #5e90ff;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #5e90ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4a7bcd;
+}

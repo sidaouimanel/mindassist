@@ -1,0 +1,21 @@
+<div class="meet-friends-container">
+    <h1>Meet Friends</h1>
+    <div class="filter-bar">
+      <input 
+        type="text" 
+        [(ngModel)]="searchText" 
+        placeholder="Search friends..." 
+      />
+      <button (click)="onSearch()">Search</button> <!-- Changement ici -->
+    </div>
+  
+    <div class="friends-grid">
+      <div *ngFor="let friend of filteredFriends" class="friend-card"> <!-- Pas de parenthèses ici -->
+        <img [src]="friend.profileImage" alt="{{ friend.name }}" />
+        <h3>{{ friend.name }}</h3>
+        <p>{{ friend.mutualFriends }} mutual friends</p>
+        <button class="connect-button">Connect</button>
+      </div>
+    </div>
+  </div>
+  

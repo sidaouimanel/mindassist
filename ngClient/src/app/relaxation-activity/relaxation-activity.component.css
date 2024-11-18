@@ -1,0 +1,90 @@
+.relaxation-activities {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(169, 206, 232); /* Couleur de fond légère */
+  }
+  
+  .activity-cards {
+    display: flex;
+    flex-wrap: wrap; /* Permet de mettre plusieurs éléments sur une ligne */
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes */
+  }
+  
+  .activity-card {
+    background-color: #fff; /* Couleur de fond blanche pour chaque carte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    padding: 15px;
+    max-width: 300px; /* Largeur maximale des cartes */
+    transition: transform 0.2s; /* Animation lors du survol */
+  }
+  
+  .activity-card:hover {
+    transform: scale(1.05); /* Agrandissement lors du survol */
+  }
+  
+  .activity-card img {
+    width: 100%; /* Images prennent toute la largeur de la carte */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+    border-radius: 10px; /* Coins arrondis pour les images */
+  }
+  
+  .activity-card h3 {
+    margin: 10px 0 5px; /* Espacement du titre */
+  }
+  
+  .activity-card p {
+    color: #666; /* Couleur du texte de la description */
+  }
+  
+  .activity-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4caf50; /* Couleur de fond du lien */
+    color: white; /* Couleur du texte du lien */
+    text-decoration: none; /* Pas de soulignement */
+    border-radius: 5px; /* Coins arrondis du bouton */
+  }
+  
+  .activity-card a:hover {
+    background-color: #45a049; /* Couleur de fond du lien lors du survol */
+  }
+  .daily-checklist {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f8ff; /* Bleu clair en fond pour un effet relaxant */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .daily-checklist h3 {
+    margin-bottom: 15px;
+    color: #4caf50;
+  }
+  
+  .daily-checklist ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .daily-checklist li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .daily-checklist input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  .activity-card img {
+    width: 100%; /* Largeur de l'image adaptée à la largeur de la carte */
+    height: 200px; /* Hauteur fixe pour uniformiser les images */
+    object-fit: cover; /* Coupe l'image pour remplir la zone définie */
+    border-radius: 10px; /* Coins arrondis pour les images */
+  }
+  

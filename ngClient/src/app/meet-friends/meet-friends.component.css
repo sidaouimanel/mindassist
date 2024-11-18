@@ -1,0 +1,86 @@
+.meet-friends-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.filter-bar input:focus {
+    border-color: #4CAF50;
+}
+
+.filter-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-bar button:hover {
+    background-color: #45A049;
+}
+
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.friend-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.friend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.friend-card img {
+    width: 100px; /* Ajustez la taille si nécessaire */
+    height: 100px; /* Ajustez la taille si nécessaire */
+    object-fit: cover;
+    border-radius: 50%; /* Rendre l'image ronde */
+    border: 2px solid #4CAF50; /* Bordure verte */
+}
+
+.friend-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.friend-card p {
+    color: #777;
+}
+
+.connect-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.connect-button:hover {
+    background-color: #45A049;
+}
